@@ -22,7 +22,8 @@ module.exports = {
     },
     plugins: [
       'react',
-      'prettier'
+      'prettier',
+      'react-hooks'
     ],
     rules: {
         'no-console': 'off',
@@ -38,6 +39,8 @@ module.exports = {
         'react/require-default-props': 'off',
         'no-throw-literal': 'off',
         'jsx-a11y/control-has-associated-label': 'off',
-        'no-param-reassign': 'off'
+        'no-param-reassign': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
     },
   };
